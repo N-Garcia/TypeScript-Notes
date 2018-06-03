@@ -1,6 +1,6 @@
 ### TypeScript commands
 <dl>
-  <dt>CMD to Compile TypeScrioptk</dt>
+  <dt>CMD to Compile TypeScript</dt>
   <dd>tsc fileName.ts -w</dd>
   <dt>Complia e adiciona o watch</dt>
   <dd>Cada vez que actualiza o ficheiro cria o respectivo JS <em>fileName.js</em>.</dd>
