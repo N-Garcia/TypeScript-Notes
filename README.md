@@ -58,8 +58,14 @@ let myTodo = {title: 'Trash', text: 'Take out trash'}
 showTodo(myTodo);
 
 ## Classes
-
-class User {
+inferface UserInferface {
+    name:string;
+    email:string;
+    age: number;
+    register();
+    payInvoice();
+}
+class User implements UserInterface{
     name: string;
     email:string;
     age: number;
@@ -71,12 +77,34 @@ class User {
         
         console.log("User Created: " + this.name);
     }
+    register() {
+      console.log( this.name+" is now registered");
+    }
     
+    payInvoice() {
+      console.log(this.name+ " Paid invoice");
+    }
 }
 
 let john = new User('John Doe', 'emailJoe@gmail.com', 22);
+john.register();
+console.log(john.age);
 
+class Member extends User {
+    id: number;
+    
+    constructor(id: number, name: string, email:string, age: number) {
+        super(name, email, age);
+        this.id = id;
+    }
+    
+    payInvoice(){
+        super.payInvoice();
+    }
+}
 
+let mike: User = new Member(1, 'Mike Smith','mike@gmail.com',33);
+mike.payInvoice();
 
 
 
