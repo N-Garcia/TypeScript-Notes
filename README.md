@@ -58,7 +58,7 @@ let myTodo = {title: 'Trash', text: 'Take out trash'}
 showTodo(myTodo);
 
 ## Classes
-inferface UserInferface {
+interface UserInferface {
     name:string;
     email:string;
     age: number;
