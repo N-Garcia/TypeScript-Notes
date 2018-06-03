@@ -1,8 +1,10 @@
-# testeRepository
+### teste Repository
 This is an TEST of git Repository
+Testing this to use take notes about code
 
-TypeScript 
+## TypeScript 
 
+```ts
 let mySum = function(num1: any, num2:any):number {
   if (tyopeof num1 == 'string') {
     num1 = parseInt(num1);
@@ -23,4 +25,4 @@ function getName (firstName: string, lastName?: string): string {
 }
 
 console.log(getName('John'));
-
+```
