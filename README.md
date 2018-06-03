@@ -1,6 +1,12 @@
-### teste Repository
-This is an TEST of git Repository
-Testing this to use take notes about code
+### TypeScript commands
+<dl>
+  <dt>CMD to Compile TypeScrioptk</dt>
+  <dd>tsc fileName.ts -w</dd>
+  <dt>Complia e adiciona o watch</dt>
+  <dd>Cada vez que actualiza o ficheiro cria o respectivo JS <em>fileName.js</em>.</dd>
+  <dt>Add your .js file to the HTML file with:</dt>
+  <dd><script src="fileName.js"></script></dd>
+</dl>
 
 ## TypeScript 
 
@@ -25,4 +31,29 @@ function getName (firstName: string, lastName?: string): string {
 }
 
 console.log(getName('John'));
+
+function myVoid(): void {
+  return;
+}
+
+## Interfaces
+
+/* function showTodo( todo: {title:string, text: string}) {
+  console.log(todo.title+": "+todo.text);
+  
+}
+let myTodo = {title: 'Trash', text: 'Take out trash'}
+showTodo(myTodo); */
+
+interface Todo{
+    title: string;
+    text: string;
+}
+
+function showTodo ( todo: Todo) {
+  console.log(todo.title+": "+todo.text);
+}
+
+let myTodo = {title: 'Trash', text: 'Take out trash'}
+showTodo(myTodo);
 ```
